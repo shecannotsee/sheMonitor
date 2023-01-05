@@ -4,11 +4,12 @@
 
 #include <iostream>
 #include <add.h>
+#include "method_1_time.h"
 
 int main() {
   std::cout<<"she monitor start.\n";
-  add a;
-  std::cout<<a.int_add(1,2)<<std::endl;
+
+  method_1_time::main();
 
   std::cout<<"she monitor end.\n";
   return 0;
