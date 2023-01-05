@@ -8,7 +8,7 @@
 #include <unistd.h>
 #include <Recording/RecordingTime.h>
 
-namespace method_2_RecordingTiome {
+namespace method_2_RecordingTime {
 
 void main() {
   sheMonitor::RecordingTime time_record_se(sheMonitor::TimeUnit::Seconds);
