@@ -10,7 +10,6 @@
 #include <Recording/time_unit.h>
 
 namespace sheMonitor {
-
 class RecordingTime {
  public:
   using record = std::chrono::time_point<std::chrono::system_clock>;
@@ -39,8 +38,7 @@ class RecordingTime {
   // Get the elapsed time
   int get();
 
-};
-
+};// class RecordingTime
 };// namespace sheMonitor
 
 #endif //SHE_MONITOR_RECORDINGTIME_H
