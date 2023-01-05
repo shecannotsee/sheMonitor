@@ -9,13 +9,17 @@
 
 namespace sheMonitor {
 
+namespace bit32 {
 using Microseconds = std::chrono::duration<int, std::ratio<1, 1000000>>;
 using Milliseconds = std::chrono::duration<int, std::ratio<1, 1000>>;
-using Seconds      = std::chrono::duration<int, std::ratio<1, 1>>;
+using Seconds = std::chrono::duration<int, std::ratio<1, 1>>;
+};// namespace bit32
 
-using Microseconds_ = std::chrono::duration<long long int, std::ratio<1, 1000000>>;
-using Milliseconds_ = std::chrono::duration<long long int, std::ratio<1, 1000>>;
-using Seconds_      = std::chrono::duration<long long int, std::ratio<1, 1>>;
+namespace bit64{
+using Microseconds = std::chrono::duration<long long int, std::ratio<1, 1000000>>;
+using Milliseconds = std::chrono::duration<long long int, std::ratio<1, 1000>>;
+using Seconds = std::chrono::duration<long long int, std::ratio<1, 1>>;
+};// namespace bit64
 
 
 
