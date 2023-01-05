@@ -18,6 +18,12 @@ class RecordingTime {
   RecordingTime() = delete;
   explicit RecordingTime(sheMonitor::TimeUnit);
   ~RecordingTime() = default;
+  // Disable copy
+  RecordingTime(const RecordingTime&) = delete;
+  RecordingTime& operator=(const RecordingTime&) = delete;
+  // Disable move
+  RecordingTime(RecordingTime&&) = delete;
+  RecordingTime& operator=(RecordingTime&&) = delete;
 
  private:
   unsigned int time_;               // start_和end_的差值
