@@ -17,9 +17,6 @@ void sheMonitor::RecordingTime::start() {
 
 void sheMonitor::RecordingTime::end() {
   end_ = std::chrono::system_clock::now();
-}
-
-int sheMonitor::RecordingTime::get() {
   if (time_unit_==TimeUnit::Seconds) {
     time_ = (std::chrono::time_point_cast<sheMonitor::bit32::Seconds>(end_) -
              std::chrono::time_point_cast<sheMonitor::bit32::Seconds>(start_)).count();
@@ -30,5 +27,8 @@ int sheMonitor::RecordingTime::get() {
     time_ = (std::chrono::time_point_cast<sheMonitor::bit32::Microseconds>(end_) -
              std::chrono::time_point_cast<sheMonitor::bit32::Microseconds>(start_)).count();
   }
+}
+
+int sheMonitor::RecordingTime::get() {
   return this->time_;
 }
