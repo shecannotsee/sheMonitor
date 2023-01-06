@@ -7,6 +7,17 @@
 
 
 class RegisterModule {
+ public:
+  RegisterModule();
+  ~RegisterModule();
+  // Disable copy
+  RegisterModule(const RegisterModule&) = delete;
+  RegisterModule& operator=(const RegisterModule&) = delete;
+  // Disable move
+  RegisterModule(RegisterModule&&) = delete;
+  RegisterModule& operator=(RegisterModule&&) = delete;
+
+ private:
 
 };
 

@@ -2,8 +2,8 @@
 // Created by  shecannotsee on 2023/1/5.
 //
 
-#ifndef SHE_MONITOR_TIME_UNIT_H
-#define SHE_MONITOR_TIME_UNIT_H
+#ifndef SHE_MONITOR_TIMEUNIT_H
+#define SHE_MONITOR_TIMEUNIT_H
 
 #include <chrono>
 
@@ -31,4 +31,4 @@ enum class TimeUnit : unsigned int {
 
 };// namespace sheMonitor
 
-#endif //SHE_MONITOR_TIME_UNIT_H
+#endif //SHE_MONITOR_TIMEUNIT_H
