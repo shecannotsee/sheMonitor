@@ -1,6 +1,8 @@
 //
 // Created by  shecannotsee on 2023/1/5.
 //
+// 该类为处理时间的类
+//
 
 #ifndef SHE_MONITOR_RECORDINGTIME_H
 #define SHE_MONITOR_RECORDINGTIME_H
